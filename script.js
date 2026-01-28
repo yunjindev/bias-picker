@@ -23,8 +23,10 @@ removeBtn.addEventListener("click", () => {
 idolListsLi.forEach(idolList => {
     idolList.addEventListener("click", () => {
         selectedIdol = idolList.textContent;
-        
-        console.log("Selected Idol:", selectedIdol);
+
+       
+        document.getElementById("selected-bias-container").textContent = "";
+
         let newh1 = document.createElement("h1");
         newh1.className = "selected-bias";
         newh1.textContent = "Your selected bias is: " + selectedIdol;
