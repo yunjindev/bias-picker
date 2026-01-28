@@ -1,3 +1,28 @@
 ul {
     visibility: hidden; 
 }
+
+li {
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    width: 4%;
+    cursor: pointer;
+    list-style: none;
+}
+
+li:hover {
+    background-color: lightgray;
+}
+
+li:active {
+    background-color: gray;
+}
+.selected-bias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
